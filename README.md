@@ -1,24 +1,40 @@
-# README
+# 株式会社万葉様新入社員教育課題
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 株式会社万葉様の新人社員教育課題の仕様を順次実装していく。
 
-Things you may want to cover:
+## バージョン
+Ruby 2.6.3
 
-* Ruby version
+Rails 6.0.0
 
-* System dependencies
+PostgreSQL 11.3
 
-* Configuration
+### DB情報
 
-* Database creation
+* userテーブル
 
-* Database initialization
+| Column | Type |
+|:----:|:----:| 
+| id | integer |
+| name | string |
+| email | string |
+|password_digest | string|
 
-* How to run the test suite
+* Taskテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column | Type |
+|:---:|:---:|
+| id | integer |
+| user_id | integer |
+| label_id | integer |
+| title | string |
+| content | text |
 
-* Deployment instructions
+* Labelテーブル
 
-* ...
+| Column | Type |
+| :---:|:---:|
+| id | integer |
+| task_id | integer |
+| label_name | string |
+

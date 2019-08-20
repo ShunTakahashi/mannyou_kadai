@@ -1,6 +1,5 @@
 <!--次回編集時このコードを読み込むこと-->
 
-
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
 <!-- Active URL: http://127.0.0.1:15016/ -->
@@ -40,7 +39,7 @@
       <type label="SET" length="1" sql="SET" quote=""/>
       <type label="Bit" length="0" sql="bit" quote=""/>
     </group>
-  </datatypes><table x="365" y="207" name="user < 1">
+  </datatypes><table x="353" y="211" name="user < 1">
   <row name="id" null="1" autoincrement="1">
     <datatype>INTEGER</datatype>
     <default>NULL</default></row>
@@ -65,6 +64,10 @@
       <datatype>INTEGER</datatype>
       <default>NULL</default><relation table="user < 1" row="id" />
     </row>
+    <row name="label_id" null="1" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default><relation table="多> Label" row="id" />
+    </row>
     <row name="title" null="1" autoincrement="0">
       <datatype>MEDIUMTEXT</datatype>
       <default>NULL</default></row>
@@ -75,7 +78,7 @@
       <part>id</part>
     </key>
   </table>
-  <table x="782" y="209" name="多> Label">
+  <table x="813" y="214" name="多> Label">
     <row name="id" null="1" autoincrement="1">
       <datatype>INTEGER</datatype>
       <default>NULL</default></row>
