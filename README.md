@@ -25,8 +25,8 @@ PostgreSQL 11.3
 | Column | Type |
 |:---:|:---:|
 | id | integer |
-| user_id | integer |
-| label_id | integer |
+| user_id | bigint |
+| label_id | bigint |
 | title | string |
 | content | text |
 
@@ -35,6 +35,6 @@ PostgreSQL 11.3
 | Column | Type |
 | :---:|:---:|
 | id | integer |
-| task_id | integer |
+| task_id | bigint |
 | label_name | string |
 
