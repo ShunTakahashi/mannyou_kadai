@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 module MannyouKadai
   class Application < Rails::Application
     config.load_defaults 6.0
+    config.time_zone = 'Tokyo'
 
     config.generators do |g|
       g.assets false
