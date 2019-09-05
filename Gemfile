@@ -17,6 +17,8 @@ group :development, :test do
   gem 'byebug'
   gem 'faker'
   gem 'factory_bot_rails'
+  gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
@@ -31,15 +33,12 @@ group :development do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc'
-  gem 'rubocop'
   gem 'rails_best_practices'
 end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'launchy'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
