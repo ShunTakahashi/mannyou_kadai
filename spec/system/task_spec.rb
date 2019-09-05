@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Task', type: :system do
+  let(:task) { create(:task) }
 
   describe 'タスク一覧確認' do
       xit 'タスク一覧が表示されること' do
-        task = FactoryBot.create(:task)
+        task
         visit root_path
         expect(page).to have_content task.title
         expect(page).to have_content task.content
@@ -25,7 +26,7 @@ RSpec.describe 'Task', type: :system do
 
   describe 'タスク詳細テスト' do
     it 'タスク詳細が表示されること' do
-    task = FactoryBot.create(:task)
+    task
     visit root_path
     click_on '詳細'
     expect(page).to have_content task.title
