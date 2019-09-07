@@ -25,12 +25,18 @@ RSpec.describe 'Task', type: :system do
   end
 
   describe 'タスク詳細テスト' do
-    it 'タスク詳細が表示されること' do
+    xit 'タスク詳細が表示されること' do
     task
     visit root_path
     click_on '詳細'
     expect(page).to have_content task.title
     expect(page).to have_content task.content
+    end
+  end
+
+  describe 'タスクが作成日時の降順に並んでいるかのテスト' do
+    it '降順に表示されること' do
+
     end
   end
 end

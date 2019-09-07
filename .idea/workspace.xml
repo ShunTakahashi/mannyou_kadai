@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6114d8ed-7c1a-41b9-aab3-b65ae4720687" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/system/task_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mannyou_kadai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mannyou_kadai.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rspec" beforeDir="false" afterPath="$PROJECT_DIR$/.rspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/support/driver_setting.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/driver_setting.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/system/task.spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/task.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/system/task_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/task_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -28,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="395">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -47,37 +41,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/driver_setting.rb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/factories/task.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -116,10 +92,12 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/system/task.spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
         <option value="$PROJECT_DIR$/spec/support/driver_setting.rb" />
         <option value="$PROJECT_DIR$/spec/factories/task.rb" />
         <option value="$PROJECT_DIR$/spec/system/task_spec.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/tasks_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
       </list>
     </option>
   </component>
@@ -156,7 +134,26 @@
               <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
               <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
@@ -187,6 +184,17 @@
               <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mannyou_kadai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mannyou_kadai" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -524,7 +532,7 @@
       <workItem from="1567600684140" duration="2341000" />
       <workItem from="1567630056342" duration="802000" />
       <workItem from="1567631958472" duration="492000" />
-      <workItem from="1567632541411" duration="2085000" />
+      <workItem from="1567632541411" duration="6812000" />
     </task>
     <task id="LOCAL-00001" summary="Add i18n(gem,config) , fix views">
       <created>1567457891328</created>
@@ -568,19 +576,24 @@
       <option name="project" value="LOCAL" />
       <updated>1567597605492</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Systemspec test &amp; setting">
+      <created>1567679224167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567679224167</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix let(:task)">
+      <created>1567680004452</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567680004452</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task_タスク一覧確認_Taskが表示されること__mannyou_kadai - 2019.09.05 at 06h 20m 11s.xml">
-      <configuration name="Task タスク一覧確認 Taskが表示されること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_タスク一覧確認__mannyou_kadai - 2019.09.05 at 06h 29m 57s.xml">
-      <configuration name="Task タスク一覧確認: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_タスク一覧確認_Taskが表示されること__mannyou_kadai - 2019.09.05 at 06h 30m 15s.xml">
-      <configuration name="Task タスク一覧確認 Taskが表示されること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Task_タスク一覧確認__mannyou_kadai - 2019.09.05 at 06h 30m 30s.xml">
       <configuration name="Task タスク一覧確認: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -602,20 +615,29 @@
     <history-entry file="Task_タスク作成テスト__mannyou_kadai - 2019.09.05 at 18h 25m 05s.xml">
       <configuration name="Task タスク作成テスト: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Task_タスク詳細テスト__mannyou_kadai - 2019.09.05 at 19h 25m 54s.xml">
+      <configuration name="Task タスク詳細テスト: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_タスク詳細テスト_タスク詳細が表示されること__mannyou_kadai - 2019.09.05 at 19h 26m 21s.xml">
+      <configuration name="Task タスク詳細テスト タスク詳細が表示されること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_タスク詳細テスト_タスク詳細が表示されること__mannyou_kadai - 2019.09.05 at 19h 38m 58s.xml">
+      <configuration name="Task タスク詳細テスト タスク詳細が表示されること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24596000" />
+    <option name="totallyTimeSpent" value="29323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -623,7 +645,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28674698" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28674698" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.29036143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -682,12 +704,14 @@
     <MESSAGE value="rm features" />
     <MESSAGE value="rm features,setting System spex" />
     <MESSAGE value="rm features,setting System spec" />
-    <option name="LAST_COMMIT_MESSAGE" value="rm features,setting System spec" />
+    <MESSAGE value="Add Systemspec test &amp; setting" />
+    <MESSAGE value="fix let(:task)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix let(:task)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task___mannyou_kadai.rcov" NAME="Task タスク詳細テスト: mannyou_kadai Coverage Results" MODIFIED="1567679144396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Task__mannyou_kadai.rcov" NAME="Task タスク一覧確認 Taskが表示されること: mannyou_kadai Coverage Results" MODIFIED="1567632934391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task____mannyou_kadai.rcov" NAME="Task タスク詳細テスト タスク詳細が表示されること: mannyou_kadai Coverage Results" MODIFIED="1567679174688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task____mannyou_kadai.rcov" NAME="Task タスク詳細テスト タスク詳細が表示されること: mannyou_kadai Coverage Results" MODIFIED="1567679930085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@test__mannyou_kadai.rcov" NAME="test: mannyou_kadai Coverage Results" MODIFIED="1567598053150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai.rcov" NAME="Task: mannyou_kadai Coverage Results" MODIFIED="1567633400525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@spec__mannyou_kadai.rcov" NAME="spec: mannyou_kadai Coverage Results" MODIFIED="1567628905856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
@@ -769,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#591#610#0#ruby" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_task_nested_taskが表示されること_680.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -789,17 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/driver_setting.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="395">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -817,6 +824,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/driver_setting.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -824,10 +845,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/tasks_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/task_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
