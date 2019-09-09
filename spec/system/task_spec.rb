@@ -5,12 +5,12 @@ RSpec.describe 'Task', type: :system do
 
   describe 'タスク一覧確認' do
     it 'タスク一覧が表示されること' do
-        task
-        visit root_path
-        expect(page).to have_content task.title
-        expect(page).to have_content task.content
-        expect(Task.count).to eq 1
-      end
+      task
+      visit root_path
+      expect(page).to have_content task.title
+      expect(page).to have_content task.content
+      expect(Task.count).to eq 1
+    end
   end
 
   describe 'タスク作成テスト' do
@@ -36,9 +36,9 @@ RSpec.describe 'Task', type: :system do
 
   describe 'タスクが作成日時の降順に並んでいるかのテスト' do
     it '降順に表示されること' do
-      Task.create!(id: 1,title: '1', content: 'test!')
-      Task.create!(id: 2,title: '2', content: 'test!!')
-      Task.create!(id: 3,title: '3', content: 'test!!!')
+      Task.create(id: 1,title: '1', content: 'test!')
+      Task.create(id: 2,title: '2', content: 'test!!')
+      Task.create(id: 3,title: '3', content: 'test!!!')
       visit root_path
       expect(Task.order("created_at DESC").map(&:id)).to eq [3,2,1]
     end
