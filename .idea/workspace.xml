@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6114d8ed-7c1a-41b9-aab3-b65ae4720687" name="Default Changelist" comment="Add Change Column Null Tasks title,content">
-      <change afterPath="$PROJECT_DIR$/spec/models/task_spec.rb" afterDir="false" />
+    <list default="true" id="6114d8ed-7c1a-41b9-aab3-b65ae4720687" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/task.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/task.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/system/task_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/task_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -36,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="54" />
+            <state relative-caret-position="225">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -45,8 +41,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/task_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories/task.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -83,7 +88,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step10" />
+        <entry key="$PROJECT_DIR$" value="step12" />
       </map>
     </option>
   </component>
@@ -102,15 +107,15 @@
         <option value="$PROJECT_DIR$/spec/system/task.spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/support/driver_setting.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/task.rb" />
         <option value="$PROJECT_DIR$/app/helpers/tasks_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/task.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
-        <option value="$PROJECT_DIR$/spec/system/task_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/task_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/system/task_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/task.rb" />
       </list>
     </option>
   </component>
@@ -264,8 +269,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai">
-    <configuration name="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.Task: mannyou_kadai (1)">
+    <configuration name="Task バリデーションチェック Titleが空だと失敗すること: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="mannyou_kadai" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -288,7 +293,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/task_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task バリデーションチェック Contentが空だと失敗すること" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task バリデーションチェック Titleが空だと失敗すること" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -333,6 +338,40 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Task タスク一覧確認 タスク一覧が表示されること: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="mannyou_kadai" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/task_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task タスク一覧確認 タスク一覧が表示されること" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Task タスクが作成日時の降順に並んでいるかのテスト 降順に表示されること: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="mannyou_kadai" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -367,7 +406,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Task バリデーションチェック is invalid without a name: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Task: mannyou_kadai (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="mannyou_kadai" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -387,10 +426,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/task_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/task_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task バリデーションチェック is invalid without a name" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -401,7 +440,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Task titleが空ならバリデーションが通らない is invalid without a name: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Task: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="mannyou_kadai" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -424,41 +463,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/task_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task titleが空ならバリデーションが通らない is invalid without a name" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="true" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Task validation check is invalid without a name: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <module name="mannyou_kadai" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/task_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task validation check is invalid without a name" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -566,11 +571,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Task: mannyou_kadai (1)" />
+        <item itemvalue="RSpec.Task: mannyou_kadai" />
         <item itemvalue="RSpec.Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai" />
-        <item itemvalue="RSpec.Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai" />
-        <item itemvalue="RSpec.Task バリデーションチェック is invalid without a name: mannyou_kadai" />
-        <item itemvalue="RSpec.Task validation check is invalid without a name: mannyou_kadai" />
-        <item itemvalue="RSpec.Task titleが空ならバリデーションが通らない is invalid without a name: mannyou_kadai" />
+        <item itemvalue="RSpec.Task タスク一覧確認 タスク一覧が表示されること: mannyou_kadai" />
+        <item itemvalue="RSpec.Task バリデーションチェック Titleが空だと失敗すること: mannyou_kadai" />
       </list>
     </recent_temporary>
   </component>
@@ -597,7 +602,7 @@
       <workItem from="1567834150083" duration="1325000" />
       <workItem from="1567835715470" duration="1554000" />
       <workItem from="1568025652315" duration="956000" />
-      <workItem from="1568060204159" duration="2006000" />
+      <workItem from="1568060204159" duration="7510000" />
     </task>
     <task id="LOCAL-00001" summary="Add i18n(gem,config) , fix views">
       <created>1567457891328</created>
@@ -662,54 +667,67 @@
       <option name="project" value="LOCAL" />
       <updated>1567832511006</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add model test">
+      <created>1568062503659</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568062503660</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix test">
+      <created>1568064888624</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568064888624</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task_validation_check_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 34m 41s.xml">
-      <configuration name="Task validation check is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_validation_check_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 35m 02s.xml">
-      <configuration name="Task validation check is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_validation_check_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 35m 21s.xml">
-      <configuration name="Task validation check is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_validation_check_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 35m 52s.xml">
-      <configuration name="Task validation check is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_validation_check_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 36m 04s.xml">
-      <configuration name="Task validation check is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_バリデーションチェック_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 45m 27s.xml">
-      <configuration name="Task バリデーションチェック is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_バリデーションチェック_is_invalid_without_a_name__mannyou_kadai - 2019.09.10 at 05h 45m 29s.xml">
-      <configuration name="Task バリデーションチェック is invalid without a name: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_バリデーションチェック_Contentが空だと失敗すること__mannyou_kadai - 2019.09.10 at 05h 47m 57s.xml">
+    <history-entry file="Task_バリデーションチェック_Contentが空だと失敗すること__mannyou_kadai - 2019.09.10 at 06h 13m 01s.xml">
       <configuration name="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Task_バリデーションチェック_Contentが空だと失敗すること__mannyou_kadai - 2019.09.10 at 05h 48m 16s.xml">
+    <history-entry file="Task_バリデーションチェック_Contentが空だと失敗すること__mannyou_kadai - 2019.09.10 at 06h 13m 32s.xml">
       <configuration name="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Task_バリデーションチェック_Title,Contentが入力されていたら成功すること__mannyou_kadai - 2019.09.10 at 05h 53m 40s.xml">
+    <history-entry file="Task_バリデーションチェック_Contentが空だと失敗すること__mannyou_kadai - 2019.09.10 at 06h 13m 47s.xml">
+      <configuration name="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_バリデーションチェック_Titleが空だと失敗すること__mannyou_kadai - 2019.09.10 at 06h 14m 21s.xml">
+      <configuration name="Task バリデーションチェック Titleが空だと失敗すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_バリデーションチェック_Titleが空だと失敗すること__mannyou_kadai - 2019.09.10 at 06h 14m 29s.xml">
+      <configuration name="Task バリデーションチェック Titleが空だと失敗すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_バリデーションチェック_Title,Contentが入力されていたら成功すること__mannyou_kadai - 2019.09.10 at 06h 14m 49s.xml">
       <configuration name="Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_タスク一覧確認_タスク一覧が表示されること__mannyou_kadai - 2019.09.10 at 06h 15m 15s.xml">
+      <configuration name="Task タスク一覧確認 タスク一覧が表示されること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task_バリデーションチェック_Title,Contentが入力されていたら成功すること__mannyou_kadai - 2019.09.10 at 06h 16m 01s.xml">
+      <configuration name="Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task__mannyou_kadai - 2019.09.10 at 06h 20m 24s.xml">
+      <configuration name="Task: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Task__mannyou_kadai_(1) - 2019.09.10 at 06h 20m 40s.xml">
+      <configuration name="Task: mannyou_kadai (1)" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43658000" />
+    <option name="totallyTimeSpent" value="49162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -717,7 +735,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28674698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28674698" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.29036143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -780,23 +798,26 @@
     <MESSAGE value="fix let(:task)" />
     <MESSAGE value="Add tasks index order.created_at desc" />
     <MESSAGE value="Add Change Column Null Tasks title,content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Change Column Null Tasks title,content" />
+    <MESSAGE value="Add model test" />
+    <MESSAGE value="fix test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_is_invalid_without_a_name__mannyou_kadai.rcov" NAME="Task is invalid without a name: mannyou_kadai Coverage Results" MODIFIED="1567996132503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task___mannyou_kadai.rcov" NAME="Task タスクが作成日時の降順に並んでいるかのテスト: mannyou_kadai Coverage Results" MODIFIED="1567834897006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Task__mannyou_kadai.rcov" NAME="Task タスク一覧確認 Taskが表示されること: mannyou_kadai Coverage Results" MODIFIED="1567632934391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task____mannyou_kadai.rcov" NAME="Task タスク一覧確認 タスク一覧が表示されること: mannyou_kadai Coverage Results" MODIFIED="1567990221496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai__1_.rcov" NAME="Task: mannyou_kadai (1) Coverage Results" MODIFIED="1567991754895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Content__mannyou_kadai.rcov" NAME="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai Coverage Results" MODIFIED="1568062094197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task____mannyou_kadai.rcov" NAME="Task タスク一覧確認 タスク一覧が表示されること: mannyou_kadai Coverage Results" MODIFIED="1568063705271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Content__mannyou_kadai.rcov" NAME="Task バリデーションチェック Contentが空だと失敗すること: mannyou_kadai Coverage Results" MODIFIED="1568063626354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai__1_.rcov" NAME="Task: mannyou_kadai (1) Coverage Results" MODIFIED="1568064030415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@test__mannyou_kadai.rcov" NAME="test: mannyou_kadai Coverage Results" MODIFIED="1567598053150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Title__mannyou_kadai.rcov" NAME="Task バリデーションチェック Titleが空だと失敗すること: mannyou_kadai Coverage Results" MODIFIED="1568063667608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_title__mannyou_kadai.rcov" NAME="Task titleが空ならバリデーションが通らない: mannyou_kadai Coverage Results" MODIFIED="1567995666711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_title___mannyou_kadai.rcov" NAME="Task titleが空ならバリデーションが通らない テストが失敗すること: mannyou_kadai Coverage Results" MODIFIED="1568058327433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Title_Content__mannyou_kadai.rcov" NAME="Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai Coverage Results" MODIFIED="1568062418493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__Title_Content__mannyou_kadai.rcov" NAME="Task バリデーションチェック Title,Contentが入力されていたら成功すること: mannyou_kadai Coverage Results" MODIFIED="1568063760018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_title__mannyou_kadai__1_.rcov" NAME="Task titleが空ならバリデーションが通らない: mannyou_kadai (1) Coverage Results" MODIFIED="1568001886308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_title_is_invalid_without_a_name__mannyou_kadai.rcov" NAME="Task titleが空ならバリデーションが通らない is invalid without a name: mannyou_kadai Coverage Results" MODIFIED="1568061069020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_validation_check_is_invalid_without_a_name__mannyou_kadai.rcov" NAME="Task validation check is invalid without a name: mannyou_kadai Coverage Results" MODIFIED="1568061363283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai.rcov" NAME="Task: mannyou_kadai Coverage Results" MODIFIED="1567633400525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai.rcov" NAME="Task: mannyou_kadai Coverage Results" MODIFIED="1568064022390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@spec__mannyou_kadai.rcov" NAME="spec: mannyou_kadai Coverage Results" MODIFIED="1567628905856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_title___mannyou_kadai__1_.rcov" NAME="Task titleが空ならバリデーションが通らない テストが通らないこと: mannyou_kadai (1) Coverage Results" MODIFIED="1568058377674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task__is_invalid_without_a_name__mannyou_kadai.rcov" NAME="Task バリデーションチェック is invalid without a name: mannyou_kadai Coverage Results" MODIFIED="1568061927769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
@@ -948,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/task.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -983,17 +997,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/task.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="54" />
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/task_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
