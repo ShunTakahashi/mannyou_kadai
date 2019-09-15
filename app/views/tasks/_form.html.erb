@@ -21,6 +21,11 @@
     <%= form.text_area :content %>
   </div>
 
+  <div class="field">
+    <%= form.label :expired_at ,t('views.expired_at')%>
+    <%= form.datetime_select :expired_at,  {default: Time.current + 2.hour, minute_step: 10} %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

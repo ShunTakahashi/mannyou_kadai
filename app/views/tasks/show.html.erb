@@ -8,5 +8,10 @@
   <%= @task.content %>
 </p>
 
+<p>
+  <strong><%= t('views.expired_at') %>:</strong>
+  <%= short_time(@task.expired_at) %>
+</p>
+
 <%= link_to t('views.edit'), edit_task_path(@task) %>
 <%= link_to t('views.back'), tasks_path %>
