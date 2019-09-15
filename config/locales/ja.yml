@@ -21,6 +21,7 @@ ja:
       task:
         task_name: タスク名
 
+
   views:
     title: タイトル
     content: 内容
@@ -29,6 +30,10 @@ ja:
     edit: 編集
     delete: 削除
     new_task: 新規作成
+    expired_at: 終了期限
+    expired_at_sort_asc: ▲
+    expired_at_sort_desc: ▼
+
 
   date:
     abbr_day_names:
