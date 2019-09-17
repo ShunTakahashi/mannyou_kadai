@@ -33,6 +33,11 @@ ja:
     expired_at: 終了期限
     expired_at_sort_asc: ▲
     expired_at_sort_desc: ▼
+    status: 着手状態
+    not_yet_arrived: 未着手
+    underway: 着手中
+    complete: 完了
+
 
 
   date:

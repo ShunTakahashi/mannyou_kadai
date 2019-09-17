@@ -5,25 +5,34 @@
 
       <ul>
         <% @task.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <li><%= message %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="field">
-    <%= form.label :title , t('views.title') %>
+    <%= form.label :title, t('views.title') %>
     <%= form.text_area :title %>
   </div>
 
   <div class="field">
-    <%= form.label :content ,t('views.content')%>
+    <%= form.label :content, t('views.content') %>
     <%= form.text_area :content %>
   </div>
 
   <div class="field">
-    <%= form.label :expired_at ,t('views.expired_at')%>
-    <%= form.datetime_select :expired_at,  {default: Time.current + 2.hour, minute_step: 10} %>
+    <%= form.label :expired_at, t('views.expired_at') %>
+    <%= form.datetime_select :expired_at, {default: Time.current + 2.hour, minute_step: 10} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status, t('views.status') %>
+    <%= form.select :status, [[t("views.not_yet_arrived"), 'not_yet_arrived'],
+                              [t('views.underway'), 'underway'],
+                              [t('views.complete'), 'complete'],
+
+    ]%>
   </div>
 
   <div class="actions">
