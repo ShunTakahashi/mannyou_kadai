@@ -1,4 +1,4 @@
-module TaskHelper
+module TasksHelper
 
   def short_time(datetime)
     datetime.strftime("%-m/%d %-H:%M")
@@ -13,4 +13,6 @@ module TaskHelper
       t('views.complete')
     end
   end
+
+
 end
