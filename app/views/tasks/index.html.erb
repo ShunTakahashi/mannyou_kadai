@@ -6,6 +6,9 @@
   <%= form.label :title,t('views.title')%>
   <%= form.text_field :title %>
 
+  <%= form.label :content, t('views.content') %>
+  <%= form.text_field :content %>
+
   <%= form.submit t('views.search'), name: :search %>
 <% end %>
 

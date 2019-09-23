@@ -8,7 +8,7 @@ class TasksController < ApplicationController
       @tasks = Task.all.order(expired_at: :desc)
     elsif params[:search]
       @tasks = Task.all
-      @tasks = @tasks.search(params[:task][:title])
+      @tasks = @tasks.search(params[:task][:title], params[:task][:content])
     else
       @tasks = Task.all.order(created_at: :desc)
     end
