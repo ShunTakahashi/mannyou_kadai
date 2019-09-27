@@ -10,14 +10,16 @@
   <%= form.text_field :content %>
   <br>
   <%= form.label :status, t('views.status') %>
-  <%= form.select :status, [
+  <%= form.select :status, options_for_select([
+      ['--',''],
       [t("views.not_yet_arrived"), 'not_yet_arrived'],
       [t('views.underway'), 'underway'],
-      [t('views.complete'), 'complete'], ]
+      [t('views.complete'), 'complete'],],selected: '')
   %>
   <br>
+  <%= form.hidden_field :search, value: "true"%>
   <%= form.submit t('views.search'), name: :search %>
-  <%= button_to '再度読み込み', tasks_path, class: 'btn btn-default' %>
+  <%= button_to '再度読み込み', root_path, class: 'btn btn-default' %>
 <% end %>
 
 <table>
