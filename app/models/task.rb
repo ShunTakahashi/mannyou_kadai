@@ -2,6 +2,10 @@ class Task < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
 
+  scope :created_desc, -> {order(created_at: :desc)}
+  scope :expired_desc, -> {order(expired_at: :desc)}
+  scope :expired_asc, -> {order(expired_at: :asc)}
+
   scope :search_title, ->(title) {where("title LIKE ?", "%#{ title }%")}
   scope :search_content, ->(content) {where("content LIKE ?", "%#{ content }%")}
   scope :search_status, -> (status) {where("status LIKE ?", "#{ status }%")}
@@ -12,31 +16,29 @@ class Task < ApplicationRecord
 
 
   def self.index_order(params)
-    if params[:sort_expired_asc]
-      @tasks = Task.all.order(expired_at: :asc)
+    if params[:reload] || params[:task][:title].blank? && params[:task][:content].blank? && params[:task][:status].blank?
+      created_desc
+    elsif params[:sort_expired_asc]
+      expired_asc
     elsif params[:sort_expired_desc]
-      @tasks = Task.all.order(expired_at: :desc)
+      expired_desc
     elsif params[:task].present?
       if params[:task][:title].present? && params[:task][:content].present? && params[:task][:status].present?
         search_title_content_status(params[:task][:title], params[:task][:content], params[:task][:status])
       elsif params[:task][:title].present? && params[:task][:content].present?
-        search_title_content(params[:task][:title], params[:task][:content])
+        search_title_content(params[:task][:title], params[:task][:content]).created_desc
       elsif params[:task][:title].present? && params[:task][:status]
-        search_title_status(params[:task][:title], params[:task][:status])
+        search_title_status(params[:task][:title], params[:task][:status]).created_desc
       elsif params[:task][:content].present? && params[:task][:status]
-        search_content_status(params[:task][:content], params[:task][:status])
+        search_content_status(params[:task][:content], params[:task][:status]).created_desc
       elsif params[:task][:title].present?
-        search_title(params[:task][:title])
+        search_title(params[:task][:title]).created_desc
       elsif params[:task][:content].present?
-        search_content(params[:task][:content])
+        search_content(params[:task][:content]).created_desc
       elsif params[:task][:status].present?
-        search_status(params[:task][:status])
+        search_status(params[:task][:status]).created_desc
       end
-    else
-      @tasks = Task.all.order(created_at: :desc)
     end
-
-
   end
 
 end
