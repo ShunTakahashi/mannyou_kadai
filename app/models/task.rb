@@ -16,7 +16,7 @@ class Task < ApplicationRecord
 
 
   def self.index_order(params)
-    if params[:reload] || params[:task][:title].blank? && params[:task][:content].blank? && params[:task][:status].blank?
+    if params[:reload]
       created_desc
     elsif params[:sort_expired_asc]
       expired_asc
@@ -37,9 +37,13 @@ class Task < ApplicationRecord
         search_content(params[:task][:content]).created_desc
       elsif params[:task][:status].present?
         search_status(params[:task][:status]).created_desc
+      elsif params[:task][:title].blank? && params[:task][:content].blank? && params[:task][:status].blank?
+        created_desc
       end
+    else
+      created_desc
     end
   end
 
-end
 
+end
