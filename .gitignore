@@ -30,8 +30,6 @@
 yarn-debug.log*
 .yarn-integrity
 
-git rm -r --cached .
-
 
 # Ruby Mine .ide用
 
