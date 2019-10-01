@@ -57,4 +57,19 @@ RSpec.describe 'Task', type: :system do
     end
   end
 
+  describe '優先度が正しく表示され、指定順番に並んでいること' do
+    it '優先度を指定通りに追加できていること' do
+      Task.create(title: '1', content: 'test!', priority: 0)
+      Task.create(title: '2', content: 'test!', priority: 1)
+      Task.create(title: '3', content: 'test!', priority: 2)
+      visit root_path
+      visit root_path
+      click_on '△'
+      expect(Task.order("priority ASC").map(&:title)).to eq ["1", "2", "3"]
+      click_on '▽'
+      expect(Task.order("priority DESC").map(&:title)).to eq ["3", "2", "1"]
+
+    end
+  end
+
 end

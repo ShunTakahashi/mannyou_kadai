@@ -8,6 +8,14 @@ ja:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
 
+  enums:
+    task:
+      priority:
+        low: 低
+        middle: 中
+        high: 高
+
+
   models:
     task: タスク
     user: ユーザー
@@ -20,6 +28,9 @@ ja:
         password_confirmation: 確認用パスワード
       task:
         task_name: タスク名
+        low: 低
+        middle: 中
+        high: 高
 
 
   views:
@@ -38,6 +49,9 @@ ja:
     underway: 着手中
     complete: 完了
     search: 検索
+    priority: 優先度
+    sort_priority_asc: △
+    sort_priority_desc: ▽
 
 
 

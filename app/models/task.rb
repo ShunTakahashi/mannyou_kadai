@@ -5,6 +5,8 @@ class Task < ApplicationRecord
   scope :created_desc, -> {order(created_at: :desc)}
   scope :expired_desc, -> {order(expired_at: :desc)}
   scope :expired_asc, -> {order(expired_at: :asc)}
+  scope :sort_priority_asc, -> {order(priority: :asc)}
+  scope :sort_priority_desc, -> {order(priority: :desc)}
 
   scope :search_title, ->(title) {where("title LIKE ?", "%#{ title }%")}
   scope :search_content, ->(content) {where("content LIKE ?", "%#{ content }%")}
@@ -14,6 +16,8 @@ class Task < ApplicationRecord
   scope :search_content_status, ->(content, status) {where("content LIKE ? AND status LIKE ?", "%#{ content }%", "%#{ status }%")}
   scope :search_title_content_status, ->(title, content, status) {where("title LIKE ? AND content LIKE ? AND status LIKE ?", "%#{ title }%", "%#{ content }%", "%#{ status }%")}
 
+  enum priority: { low: 0, middle: 1, high: 2 }
+
 
   def self.index_order(params)
     if params[:reload]
@@ -22,6 +26,10 @@ class Task < ApplicationRecord
       expired_asc
     elsif params[:sort_expired_desc]
       expired_desc
+    elsif params[:sort_priority_asc]
+      sort_priority_asc
+    elsif params[:sort_priority_desc]
+      sort_priority_desc
     elsif params[:task].present?
       if params[:task][:title].present? && params[:task][:content].present? && params[:task][:status].present?
         search_title_content_status(params[:task][:title], params[:task][:content], params[:task][:status])
