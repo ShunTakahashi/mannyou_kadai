@@ -73,7 +73,7 @@ herokuと表示されない場合は補足を参照
 
 デプロイ
 
-`$ git pudh heroku master`
+`$ git push heroku master`
 
 DB移行
 
