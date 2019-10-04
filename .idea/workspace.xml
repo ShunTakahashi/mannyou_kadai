@@ -53,10 +53,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
             </state>
           </provider>
         </entry>
@@ -237,7 +233,6 @@
     </option>
   </component>
   <component name="RunManager" selected="RSpec.Task: mannyou_kadai">
-    <configuration name="Task タスク作成テスト タスクが作成されること: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="mannyou_kadai" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -363,6 +358,40 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task 終了期限が正しく表示され、指定順番に並んでいること" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Task: mannyou_kadai" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="mannyou_kadai" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/task_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Task" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -613,23 +642,11 @@
     <history-entry file="Task_終了期限が正しく表示され、指定順番に並んでいること__mannyou_kadai - 2019.10.01 at 23h 43m 16s.xml">
       <configuration name="Task 終了期限が正しく表示され、指定順番に並んでいること: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Task_scopeチェック__mannyou_kadai - 2019.09.30 at 20h 46m 27s.xml">
-      <configuration name="Task scopeチェック: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_scopeチェック__mannyou_kadai - 2019.09.30 at 20h 46m 48s.xml">
-      <configuration name="Task scopeチェック: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_scopeチェック__mannyou_kadai - 2019.09.30 at 20h 46m 56s.xml">
-      <configuration name="Task scopeチェック: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_scopeチェック__mannyou_kadai - 2019.09.30 at 20h 47m 04s.xml">
-      <configuration name="Task scopeチェック: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Task_scopeチェック_search_title__mannyou_kadai - 2019.09.30 at 20h 51m 04s.xml">
-      <configuration name="Task scopeチェック search_title: mannyou_kadai" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
+
   </component>
   <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="90248000" />
+    
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,7 +665,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.3433735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.39518073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,8 +753,8 @@
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task___mannyou_kadai.rcov" NAME="Task 終了期限が正しく表示され、指定順番に並んでいること: mannyou_kadai Coverage Results" MODIFIED="1569940988315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_scope_search_status__mannyou_kadai.rcov" NAME="Task scopeチェック search_status: mannyou_kadai Coverage Results" MODIFIED="1569745510775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task____mannyou_kadai.rcov" NAME="Task 終了期限が正しく表示され、指定順番に並んでいること 終了期限を指定通りに追加できていること: mannyou_kadai Coverage Results" MODIFIED="1569940809596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
-    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai__1_.rcov" NAME="Task: mannyou_kadai (1) Coverage Results" MODIFIED="1569728210306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_scope_search_title_content__mannyou_kadai.rcov" NAME="Task scopeチェック search_title_content: mannyou_kadai Coverage Results" MODIFIED="1569761999832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
+    <SUITE FILE_PATH="coverage/mannyou_kadai@Task__mannyou_kadai__1_.rcov" NAME="Task: mannyou_kadai (1) Coverage Results" MODIFIED="1570181716648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_scope_search_title_content_status__mannyou_kadai.rcov" NAME="Task scopeチェック search_title_content_status: mannyou_kadai Coverage Results" MODIFIED="1569762448034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_scope__mannyou_kadai__1_.rcov" NAME="Task scopeチェック: mannyou_kadai (1) Coverage Results" MODIFIED="1569728690186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
     <SUITE FILE_PATH="coverage/mannyou_kadai@Task_scope_search_title__mannyou_kadai.rcov" NAME="Task scopeチェック search_title: mannyou_kadai Coverage Results" MODIFIED="1569844262571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mannyou_kadai" />
@@ -764,7 +781,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20190908021414_change_column_null_tasks.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/pids/server.pid" />
     <entry file="file://$PROJECT_DIR$/app/views/tasks/search.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -822,31 +838,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190912204311_add_column_tasks.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190930141047_add_column_tasks_priority.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
         </state>
       </provider>
     </entry>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/ja.yml">
+    <entry file="file://$PROJECT_DIR$/spec/system/task_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/task_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
+
         </state>
       </provider>
     </entry>
