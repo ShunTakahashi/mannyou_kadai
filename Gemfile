@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rails-i18n'
 gem 'enum_help'
+gem 'kaminari'
 
 group :development, :test do
   gem 'rspec-rails'
