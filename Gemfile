@@ -15,6 +15,7 @@ gem 'enum_help'
 gem 'kaminari'
 gem 'bootstrap-sass'
 gem 'sassc-rails'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails'
