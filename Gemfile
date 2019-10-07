@@ -16,6 +16,7 @@ gem 'kaminari'
 gem 'bootstrap-sass'
 gem 'sassc-rails'
 gem 'jquery-rails'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'rspec-rails'
