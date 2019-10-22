@@ -31,9 +31,8 @@ li {
 
 }
 
-.index_table th td{
-  text-align: center;
-  margin: 0 5%;
+.index_table{
+  margin-bottom: 1rem;
 }
 
 .reload-btn{
