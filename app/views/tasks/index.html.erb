@@ -1,4 +1,4 @@
-<h1>Tasks</h1>
+<h1 class="page_title">Tasks</h1>
 
 <%= t('views.search') %>
 <%= form_with(model: Task.new, url: tasks_path, local: true, method: :get) do |form| %>
@@ -18,22 +18,22 @@
   %>
   <br>
   <%= form.hidden_field :search, value: "true" %>
-  <%= form.submit t('views.search'), name: :search%>
+  <%= form.submit t('views.search'), name: :search %>
 
 <% end %>
 <%= link_to '再度読み込み', tasks_path(reload: "true"), class: 'btn btn-default' %>
-<table>
-  <thead>
+<table class="col-md-auto">
+  <thead class="index_table">
   <tr>
-    <th><%= t('views.title') %></th>
-    <th><%= t('views.content') %></th>
-    <th>
+    <th class="col-md-auto"><%= t('views.title') %></th>
+    <th class="col-md-auto"><%= t('views.content') %></th>
+    <th class="col-md-auto">
       <%= t('views.expired_at') %>
       <%= link_to t('views.expired_at_sort_asc'), root_path(sort_expired_asc: "true") %>
       <%= link_to t('views.expired_at_sort_desc'), root_path(sort_expired_desc: "true") %>
     </th>
-    <th><%= t('views.status') %></th>
-    <th>
+    <th class="col-md-auto"><%= t('views.status') %></th>
+    <th class="col-md-auto">
       <%= t('views.priority') %>
       <%= link_to t('views.sort_priority_asc'), root_path(sort_priority_asc: "true") %>
       <%= link_to t('views.sort_priority_desc'), root_path(sort_priority_desc: "true") %>
@@ -46,14 +46,14 @@
   <div class="task_list">
     <% @tasks.each do |task| %>
       <tr>
-        <td><%= task.title %></td>
-        <td><%= task.content %></td>
-        <td><%= short_time(task.expired_at) %></td>
-        <td><%= status_name(task.status) %></td>
-        <td><%= task.priority_i18n %></td>
-        <td><%= link_to t('views.show'), task_path(task) %></td>
-        <td><%= link_to t('views.edit'), edit_task_path(task) %></td>
-        <td><%= link_to t('views.delete'), task_path(task), method: :delete, data: {confirm: '本当に削除してもよろしいですか?'} %></td>
+        <td align="center"><%= task.title %></td>
+        <td align="center"><%= task.content %></td>
+        <td align="center"><%= short_time(task.expired_at) %></td>
+        <td align="center"><%= status_name(task.status) %></td>
+        <td align="center"><%= task.priority_i18n %></td>
+        <td><%= link_to t('views.show'), task_path(task), class: "btn btn-info btn-sm" %></td>
+        <td><%= link_to t('views.edit'), edit_task_path(task), class: "btn btn-info btn-sm" %></td>
+        <td><%= link_to t('views.delete'), task_path(task), method: :delete, data: {confirm: '本当に削除してもよろしいですか?'}, class: "btn btn-danger btn-sm" %></td>
       </tr>
     <% end %>
   </div>
