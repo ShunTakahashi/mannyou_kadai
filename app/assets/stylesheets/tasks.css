@@ -24,7 +24,7 @@ li {
 .top_link {
   margin-left: 2%;
   margin-top: auto;
-  display: block;
+  text-align: center;
 }
 
 .page_title{
@@ -34,4 +34,8 @@ li {
 .index_table th td{
   text-align: center;
   margin: 0 5%;
+}
+
+.reload-btn{
+  margin: 1rem 0;
 }

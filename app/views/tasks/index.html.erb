@@ -2,27 +2,32 @@
 
 <%= t('views.search') %>
 <%= form_with(model: Task.new, url: tasks_path, local: true, method: :get) do |form| %>
-
-  <%= form.label :title, t('views.title') %>
-  <%= form.text_field :title %>
-  <br>
-  <%= form.label :content, t('views.content') %>
-  <%= form.text_field :content %>
-  <br>
-  <%= form.label :status, t('views.status') %>
-  <%= form.select :status, options_for_select([
-                                                  ['--', ''],
-                                                  [t("views.not_yet_arrived"), 'not_yet_arrived'],
-                                                  [t('views.underway'), 'underway'],
-                                                  [t('views.complete'), 'complete'],], selected: '')
-  %>
-  <br>
+  <table class="search_form">
+    <tr>
+      <th><%= form.label :title, t('views.title') %></th>
+      <td><%= form.text_field :title %></td>
+    </tr>
+    <tr>
+      <th><%= form.label :content, t('views.content') %></th>
+      <td><%= form.text_field :content %></td>
+    </tr>
+    <tr>
+      <th><%= form.label :status, t('views.status') %></th>
+      <td><%= form.select :status, options_for_select([
+                                                          ['--', ''],
+                                                          [t("views.not_yet_arrived"), 'not_yet_arrived'],
+                                                          [t('views.underway'), 'underway'],
+                                                          [t('views.complete'), 'complete'],], selected: '')
+      %>
+      </td>
+    </tr>
+  </table>
   <%= form.hidden_field :search, value: "true" %>
   <%= form.submit t('views.search'), name: :search %>
 
 <% end %>
-<%= link_to '再度読み込み', tasks_path(reload: "true"), class: 'btn btn-default' %>
-<table class="col-md-auto">
+<%= link_to '再度読み込み', tasks_path(reload: "true"), class: "btn btn-primary reload-btn" %>
+<table >
   <thead class="index_table">
   <tr>
     <th class="col-md-auto"><%= t('views.title') %></th>
