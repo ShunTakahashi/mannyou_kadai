@@ -17,6 +17,7 @@ gem 'bootstrap-sass'
 gem 'sassc-rails'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails'
