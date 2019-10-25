@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MannyouKadai</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>MannyouKadai</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= notice %>
-    <%= yield %>
-  </body>
+</head>
+<header>
+  <ul class="top_menu clearfix">
+    <li><%= link_to "Home", root_path, id: 'top_link' %></li>
+  </ul>
+</header>
+
+<body>
+<div class="container">
+  <%= notice %>
+  <%= yield %>
+</div>
+</body>
 </html>

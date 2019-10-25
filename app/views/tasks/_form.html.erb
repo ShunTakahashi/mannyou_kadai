@@ -1,7 +1,7 @@
 <%= form_with(model: @task, local: true) do |form| %>
   <% if @task.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this blog from being saved:</h2>
+      <h2><%= pluralize(@task.errors.count, "件のエラーが発生しました。") %></h2>
 
       <ul>
         <% @task.errors.full_messages.each do |message| %>
@@ -11,33 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title, t('views.title') %>
-    <%= form.text_area :title %>
-  </div>
+  <table>
+    <tr>
+      <th align="center"><%= form.label :title, t('views.title') %></th>
+      <td><%= form.text_area :title %></td>
+    </tr>
 
-  <div class="field">
-    <%= form.label :content, t('views.content') %>
-    <%= form.text_area :content %>
-  </div>
+    <tr>
+      <th align="center"><%= form.label :content, t('views.content') %></th>
+      <td><%= form.text_area :content %></td>
+    </tr>
 
-  <div class="field">
-    <%= form.label :expired_at, t('views.expired_at') %>
-    <%= form.datetime_select :expired_at, {default: Time.current + 2.hour, minute_step: 10} %>
-  </div>
+    <tr>
+      <th align="center"><%= form.label :expired_at, t('views.expired_at') %></th>
+      <td><%= form.datetime_select :expired_at, {default: Time.current + 2.hour, minute_step: 10} %></td>
+    </tr>
 
-  <div class="field">
-    <%= form.label :status, t('views.status') %>
-    <%= form.select :status, [[t("views.not_yet_arrived"), 'not_yet_arrived'],
-                              [t('views.underway'), 'underway'],
-                              [t('views.complete'), 'complete'],
-    ] %>
-  </div>
+    <tr>
+      <th align="center"><%= form.label :status, t('views.status') %></th>
+      <td><%= form.select :status, [[t("views.not_yet_arrived"), 'not_yet_arrived'],
+                                    [t('views.underway'), 'underway'],
+                                    [t('views.complete'), 'complete'],
+      ] %>
+      </td>
+    </tr>
 
-  <div class="field">
-    <%= form.label :priority, t('views.priority') %>
-    <%= form.select :priority, Task.priorities.keys.map {|k| [t("enums.task.priority.#{k}"), k]} %>
-  </div>
+    <tr>
+      <th align="center"><%= form.label :priority, t('views.priority') %></th>
+      <td><%= form.select :priority, Task.priorities.keys.map {|k| [t("enums.task.priority.#{k}"), k]} %></td>
+    </tr>
+
+  </table>
 
   <div class="actions">
     <%= form.submit %>

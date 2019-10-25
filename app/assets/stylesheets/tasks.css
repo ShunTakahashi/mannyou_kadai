@@ -1,0 +1,45 @@
+body{
+  height: 100%;
+  /*padding-left: 5%;*/
+  /*padding-right: 5%;*/
+}
+
+/*.container{*/
+/*  width: 40%;*/
+/*  margin: auto;*/
+/*}*/
+
+
+header {
+  height: 50px;
+  background-color: #BBBBBB;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+header li {
+  list-style: none;
+  display:inline-block;
+}
+
+#top_link {
+  float: left;
+  display: block;
+  padding:10px 15px;
+}
+
+.index_table{
+  margin-bottom: 1rem;
+}
+
+.reload-btn{
+  margin: 1rem 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
