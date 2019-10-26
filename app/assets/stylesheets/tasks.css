@@ -4,10 +4,9 @@ body{
   /*padding-right: 5%;*/
 }
 
-/*.container{*/
-/*  width: 40%;*/
-/*  margin: auto;*/
-/*}*/
+.main_body{
+  padding-top: 50px;
+}
 
 
 header {

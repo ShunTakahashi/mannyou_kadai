@@ -1,0 +1,12 @@
+
+
+<%= form_with(scope: :session, url: new_session_path, local: true) do |f| %>
+  <h1>ログイン</h1>
+  <%= f.email_field :email, placheolder: "メールアドレス", size: 30 %>
+  <br>
+  <%= f.password_field :password, pleacheolder: "パスワード", size: 30 %>
+  <br>
+  <%= f.submit "ログイン", class: "submit btn btn-success" %>
+
+<% end %>
+<%= link_to "新規登録", '/users/new' %>
