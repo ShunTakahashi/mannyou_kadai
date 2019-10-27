@@ -1,6 +1,5 @@
 class Task < ApplicationRecord
   belongs_to :user
-
   validates :title, presence: true
   validates :content, presence: true
 
@@ -19,6 +18,7 @@ class Task < ApplicationRecord
   scope :search_title_content_status, ->(title, content, status) {where("title LIKE ? AND content LIKE ? AND status LIKE ?", "%#{ title }%", "%#{ content }%", "%#{ status }%")}
 
   enum priority: { low: 0, middle: 1, high: 2 }
+
 
 
   def self.index_order(params)

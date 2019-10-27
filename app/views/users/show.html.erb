@@ -4,3 +4,8 @@
   <strong><%= t('views.name') %>:</strong>
   <%= @user.name %>
 </p>
+
+<div>
+  <%= link_to "ログアウト", session_path(current_user.id), method: :delete %>
+</div>
+

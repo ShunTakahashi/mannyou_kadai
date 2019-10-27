@@ -1,10 +1,16 @@
-class TasksController < ApplicationController
+class
+TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :ensure_correct_user, only: [:show, :edit, :update, :destroy]
 
   PER = 5
 
   def index
-    @tasks = Task.index_order(params).page(params[:page]).per(PER)
+    if logged_in?
+      @tasks = Task.index_order(params).page(params[:page]).per(PER)
+    else
+      redirect_to new_session_path
+    end
   end
 
   def show
@@ -19,6 +25,7 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params)
+    @task.user_id = current_user.id
     if @task.save
       redirect_to tasks_path, notice: '登録が完了しました'
     else
@@ -48,4 +55,11 @@ class TasksController < ApplicationController
   def set_task
     @task = Task.find(params[:id])
   end
+
+  def ensure_correct_user
+    if @current_user.id !=  params[:id].to_i
+      redirect_to tasks_path
+    end
+  end
+
 end
