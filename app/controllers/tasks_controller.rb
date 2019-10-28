@@ -1,5 +1,4 @@
-class
-TasksController < ApplicationController
+class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
   before_action :ensure_correct_user, only: [:show, :edit, :update, :destroy]
 

@@ -24,9 +24,11 @@ RSpec.describe Task, type: :model do
 
   describe 'scopeチェック' do
     before do
+      User.create(name: 'test', email: 'test@sample', password: '123456778')
       Task.create(title: "1st", content: "1st", status: "not_yet_arrived")
       Task.create(title: "1st", content: "2nd", status: "not_yet_arrived")
       Task.create(title: "2nd", content: "1st", status: "complete")
+      byebug
     end
 
     it 'search_title' do
