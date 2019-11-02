@@ -1,15 +1,12 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
   before_action :ensure_correct_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_login
 
   PER = 5
 
   def index
-    if logged_in?
-      @tasks = Task.index_order(params).page(params[:page]).per(PER)
-    else
-      redirect_to new_session_path
-    end
+    @tasks = Task.where(user_id: current_user.id).index_order(params).page(params[:page]).per(PER)
   end
 
   def show
@@ -55,8 +52,14 @@ class TasksController < ApplicationController
   end
 
   def ensure_correct_user
-    if @current_user.id !=  params[:id].to_i
+    unless current_user.id == @task.user_id
       redirect_to tasks_path
+    end
+  end
+
+  def check_login
+    unless logged_in?
+      redirect_to new_session_path
     end
   end
 
