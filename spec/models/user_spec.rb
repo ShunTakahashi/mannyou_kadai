@@ -37,5 +37,9 @@ RSpec.describe User, type: :model do
       expect(@user).to be_invalid
     end
 
+    it '全て正しく登録されてれば成功すること' do
+      expect(user).to be_valid
+    end
+
   end
 end
