@@ -1,11 +1,16 @@
 <h1>ログイン</h1>
 <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
-
-  <%= f.email_field :email, placheolder: "メールアドレス" %>
-  <br>
-  <%= f.password_field :password, pleacheolder: "パスワード" %>
+  <table>
+    <tr>
+      <th align="center"><%= f.label :email, t('views.email') %></th>
+      <td><%= f.email_field :email, pleacheolder: 'メールアドレス' %></td>
+    </tr>
+    <tr>
+      <th align="center"><%= f.label :password, t('views.password') %></th>
+      <td><%= f.password_field :password, pleacheolder: 'パスワード' %></td>
+    </tr>
+  </table>
   <br>
   <%= f.submit "ログイン", class: "submit btn btn-success" %>
-
 <% end %>
 <%= link_to "新規登録", '/users/new' %>
