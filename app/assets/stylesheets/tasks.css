@@ -42,3 +42,10 @@ header li {
   display: block;
   clear: both;
 }
+
+.user_link{
+  float: right;
+  display: block;
+  padding:10px 15px;
+  margin-right: 1.5rem;
+}
