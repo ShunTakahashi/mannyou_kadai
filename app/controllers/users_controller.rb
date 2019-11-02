@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to tasks_path, notice: "新規登録とログインが完了しました"
+      redirect_to user_path(current_user.id), notice: "新規登録とログインが完了しました"
     else
       render :new
     end
