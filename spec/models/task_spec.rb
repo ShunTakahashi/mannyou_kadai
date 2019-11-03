@@ -2,8 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Task, type: :model do
   let(:task) {build(:task)}
-  let(:user) {build(:user)}
-
 
   describe 'バリデーションチェック' do
 
