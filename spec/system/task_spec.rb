@@ -76,7 +76,6 @@ RSpec.describe 'Task', type: :system do
       expect(Task.order("priority ASC").map(&:title)).to eq ["1", "2", "3"]
       click_on '▽'
       expect(Task.order("priority DESC").map(&:title)).to eq ["3", "2", "1"]
-
     end
   end
 
