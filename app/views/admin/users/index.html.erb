@@ -1,0 +1,8 @@
+<h1>管理画面:ユーザー一覧</h1>
+
+<h2>総ユーザー数:<%= @users.count %></h2>
+<% @users.each do |user| %>
+  <div>
+    <%= link_to "ID:#{user.id} 名前:#{user.name} 作成日:#{user.created_at.strftime("%Y-%m-%d %H:%M")} 管理者#{user.admin}", admin_user_path(user) %>
+  </div>
+<% end %>
