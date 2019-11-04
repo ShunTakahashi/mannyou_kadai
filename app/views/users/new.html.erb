@@ -1,6 +1,6 @@
 <h1>ユーザー登録</h1>
 
-<%= form_with(model: @user, local: true) do |form| %>
+<%= form_with(model: @user, url: admin_users_path, local: true) do |form| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "件のエラーが発生しました。") %></h2>
