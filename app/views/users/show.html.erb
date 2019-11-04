@@ -5,6 +5,10 @@
   <%= @user.name %>
 </p>
 
+<% if current_user.admin == true %>
+  <%= link_to "管理者ページ", admin_users_path %>
+<% end %>
+
 <div>
   <%= link_to "ログアウト", session_path(current_user.id), method: :delete %>
 </div>
