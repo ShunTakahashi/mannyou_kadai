@@ -24,7 +24,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to tasks_path, notice: '登録が完了しました'
     else
-      render :new
+      render :new, notice: '再度入力してください'
     end
   end
 
@@ -32,7 +32,7 @@ class TasksController < ApplicationController
     if @task.update(task_params)
       redirect_to tasks_path, notice: '編集が完了しました'
     else
-      render :edit
+      render :edit, notice: '再度入力してください'
     end
   end
 
