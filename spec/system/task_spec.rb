@@ -3,6 +3,14 @@ require 'rails_helper'
 RSpec.describe 'Task', type: :system do
   let(:task) {create(:task)}
 
+  before do
+    FactoryBot.create(:test_user)
+    visit new_session_path
+    fill_in 'メールアドレス', with: 'test@sample'
+    fill_in 'パスワード', with: '12345678'
+    click_on 'ログイン'
+  end
+
   describe 'タスク一覧確認' do
     it 'タスク一覧が表示されること' do
       task
@@ -26,19 +34,19 @@ RSpec.describe 'Task', type: :system do
 
   describe 'タスク詳細テスト' do
     it 'タスク詳細が表示されること' do
-      task
+      Task.create(title: '1', content: 'test!', user_id: 2)
       visit root_path
       click_on '詳細'
-      expect(page).to have_content task.title
-      expect(page).to have_content task.content
+      expect(page).to have_content '終了期限'
+      expect(page).to have_content '優先度'
     end
   end
 
   describe 'タスクが作成日時の降順に並んでいるかのテスト' do
     it '降順に表示されること' do
-      Task.create(title: '1', content: 'test!')
-      Task.create(title: '2', content: 'test!!')
-      Task.create(title: '3', content: 'test!!!')
+      Task.create(title: '1', content: 'test!', user_id: 2)
+      Task.create(title: '2', content: 'test!!', user_id: 2)
+      Task.create(title: '3', content: 'test!!!', user_id: 2)
       visit root_path
       expect(Task.order("created_at DESC").map(&:title)).to eq ["3", "2", "1"]
     end
@@ -46,9 +54,9 @@ RSpec.describe 'Task', type: :system do
 
   describe '終了期限が正しく表示され、指定順番に並んでいること' do
     it '終了期限を指定通りに追加できていること' do
-      Task.create(title: '1', content: 'test!', expired_at: Time.current + 2.day)
-      Task.create(title: '2', content: 'test!', expired_at: Time.current + 3.day)
-      Task.create(title: '3', content: 'test!', expired_at: Time.current + 4.day)
+      Task.create(title: '1', content: 'test!', expired_at: Time.current + 2.day, user_id: 2)
+      Task.create(title: '2', content: 'test!', expired_at: Time.current + 3.day, user_id: 2)
+      Task.create(title: '3', content: 'test!', expired_at: Time.current + 4.day, user_id: 2)
       visit root_path
       click_on '▼'
       expect(Task.order("expired_at DESC").map(&:title)).to eq ["3", "2", "1"]
@@ -59,16 +67,15 @@ RSpec.describe 'Task', type: :system do
 
   describe '優先度が正しく表示され、指定順番に並んでいること' do
     it '優先度を指定通りに追加できていること' do
-      Task.create(title: '1', content: 'test!', priority: 0)
-      Task.create(title: '2', content: 'test!', priority: 1)
-      Task.create(title: '3', content: 'test!', priority: 2)
+      Task.create(title: '1', content: 'test!', priority: 0, user_id: 2)
+      Task.create(title: '2', content: 'test!', priority: 1, user_id: 2)
+      Task.create(title: '3', content: 'test!', priority: 2, user_id: 2)
       visit root_path
       visit root_path
       click_on '△'
       expect(Task.order("priority ASC").map(&:title)).to eq ["1", "2", "3"]
       click_on '▽'
       expect(Task.order("priority DESC").map(&:title)).to eq ["3", "2", "1"]
-
     end
   end
 

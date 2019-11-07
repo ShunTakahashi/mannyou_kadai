@@ -1,0 +1,48 @@
+<h1>ユーザー登録</h1>
+
+<%= form_with(model: @user, url: admin_users_path, local: true) do |form| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "件のエラーが発生しました。") %></h2>
+
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table>
+    <tr>
+      <th align="center"><%= form.label :name, t('views.name') %></th>
+      <td><%= form.text_field :name, placeholder: 'ユーザー名' %></td>
+    </tr>
+
+    <tr>
+      <th align="center"><%= form.label :email, t('views.email') %></th>
+      <td><%= form.text_field :email, placeholder: 'メールアドレス' %></td>
+    </tr>
+
+    <tr>
+      <th align="center"><%= form.label :password, t('views.password') %></th>
+      <td><%= form.password_field :password, placeholder: 'パスワード(8文字以上)' %></td>
+    </tr>
+
+    <tr>
+      <th align="center"><%= form.label :password_confirmation, t('views.password_confirmation') %></th>
+      <td><%= form.password_field :password_confirmation, placeholder: '確認パスワード' %></td>
+    </tr>
+
+    <tr>
+      <th align="center"><%= form.label :admin, t('views.admin') %></th>
+      <td><%= form.select :admin, [['一般', 'false'], ['管理者', 'true']] %></td>
+    </tr>
+
+  </table>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>

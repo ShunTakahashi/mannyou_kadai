@@ -1,10 +1,12 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :ensure_correct_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_login
 
   PER = 5
 
   def index
-    @tasks = Task.index_order(params).page(params[:page]).per(PER)
+    @tasks = Task.where(user_id: current_user.id).index_order(params).page(params[:page]).per(PER)
   end
 
   def show
@@ -18,11 +20,11 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.new(task_params)
+    @task = current_user.tasks.build(task_params)
     if @task.save
       redirect_to tasks_path, notice: '登録が完了しました'
     else
-      render :new
+      render :new, notice: '再度入力してください'
     end
   end
 
@@ -30,7 +32,7 @@ class TasksController < ApplicationController
     if @task.update(task_params)
       redirect_to tasks_path, notice: '編集が完了しました'
     else
-      render :edit
+      render :edit, notice: '再度入力してください'
     end
   end
 
@@ -48,4 +50,17 @@ class TasksController < ApplicationController
   def set_task
     @task = Task.find(params[:id])
   end
+
+  def ensure_correct_user
+    unless current_user.id == @task.user_id
+      redirect_to tasks_path
+    end
+  end
+
+  def check_login
+    unless logged_in?
+      redirect_to new_session_path
+    end
+  end
+
 end

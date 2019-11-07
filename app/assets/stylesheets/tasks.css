@@ -4,10 +4,9 @@ body{
   /*padding-right: 5%;*/
 }
 
-/*.container{*/
-/*  width: 40%;*/
-/*  margin: auto;*/
-/*}*/
+.main_body{
+  padding-top: 50px;
+}
 
 
 header {
@@ -42,4 +41,11 @@ header li {
   content: "";
   display: block;
   clear: both;
+}
+
+.user_link{
+  float: right;
+  display: block;
+  padding:10px 15px;
+  margin-right: 1.5rem;
 }
