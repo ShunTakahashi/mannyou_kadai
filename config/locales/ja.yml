@@ -60,6 +60,7 @@ ja:
     admin: 管理者
     admin_true: 管理者
     admin_false: 一般
+    label: ラベル
 
 
   date:

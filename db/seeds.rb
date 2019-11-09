@@ -12,3 +12,8 @@ User.create!(
   password: '12345678',
   admin: true,
 )
+
+Label.create(label_name: "勉強")
+Label.create(label_name: "趣味")
+Label.create(label_name: "遊び")
+Label.create(label_name: "仕事")
