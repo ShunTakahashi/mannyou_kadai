@@ -25,7 +25,7 @@
 
 <p>
     <strong><%= t('view.label') %></strong>
-    <% @task.label_ids.each do |label| %>
+    <% @task.task_label_ids.each do |label| %>
       <label style="background-color:lightblue"><%= Label.find(label).label_name %></label>
     <% end %>
 </p>

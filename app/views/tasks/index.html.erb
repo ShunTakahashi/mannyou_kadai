@@ -24,8 +24,19 @@
   </table>
   <%= form.hidden_field :search, value: "true" %>
   <%= form.submit t('views.search'), name: :search %>
-
 <% end %>
+
+<%= form_with(model: Task.new, url: tasks_path, local: true, method: :get) do |f| %>
+  <table>
+    <tr>
+      <th><%= f.label :task_label_ids, t('views.label') %></th>
+      <td> <%= f.select :task_label_ids, Label.all.map{|t| [t.label_name, t.id]}, { include_blank: true } %></td>
+    </tr>
+  </table>
+  <%= f.hidden_field :label_search, value: "true" %>
+  <%= f.submit t('views.search'), name: :label_search %>
+<% end %>
+
 <%= link_to '再度読み込み', tasks_path(reload: "true"), class: "btn btn-primary reload-btn" %>
 <table class="index_table">
   <thead>
@@ -43,7 +54,6 @@
       <%= link_to t('views.sort_priority_asc'), root_path(sort_priority_asc: "true") %>
       <%= link_to t('views.sort_priority_desc'), root_path(sort_priority_desc: "true") %>
     </th>
-    <th class="col-md-auto"><%= t('view.label') %></th>
     <th colspan="3"></th>
   </tr>
   </thead>

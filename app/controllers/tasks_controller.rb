@@ -6,7 +6,13 @@ class TasksController < ApplicationController
   PER = 5
 
   def index
-    @tasks = Task.where(user_id: current_user.id).index_order(params).page(params[:page]).per(PER)
+    if params[:label_search].present?
+      label = Labeling.where(label_id: params[:task][:task_label_ids]).pluck(:task_id)
+      @tasks = Task.where(user_id: current_user.id).page(params[:page]).per(PER)
+      @tasks = @tasks.where(id: label)
+    else
+      @tasks = Task.where(user_id: current_user.id).index_order(params).page(params[:page]).per(PER)
+    end
   end
 
   def show
@@ -14,7 +20,6 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
-    @task.labelings.build
   end
 
   def edit
@@ -45,7 +50,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:title, :content, :expired_at, :status, :priority, { label_ids: [] })
+    params.require(:task).permit(:title, :content, :expired_at, :status, :priority, label_ids: [])
   end
 
   def set_task
