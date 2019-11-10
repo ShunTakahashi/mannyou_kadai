@@ -34,7 +34,7 @@
     </tr>
   </table>
   <%= f.hidden_field :label_search, value: "true" %>
-  <%= f.submit t('views.search'), name: :label_search %>
+  <%= f.submit t('views.label_search'), name: :label_search %>
 <% end %>
 
 <%= link_to '再度読み込み', tasks_path(reload: "true"), class: "btn btn-primary reload-btn" %>
