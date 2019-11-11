@@ -52,3 +52,4 @@ ActiveRecord::Schema.define(version: 2019_11_09_054904) do
 
   add_foreign_key "tasks", "users"
 end
+
