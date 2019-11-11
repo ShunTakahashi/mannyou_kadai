@@ -1,5 +1,8 @@
 class Task < ApplicationRecord
   belongs_to :user
+  has_many :labelings, dependent: :destroy
+  has_many :labels, through: :labelings, source: :label
+
   validates :title, presence: true
   validates :content, presence: true
 
@@ -16,9 +19,7 @@ class Task < ApplicationRecord
   scope :search_title_status, ->(title, status) {where("title LIKE ? AND status LIKE ?", "%#{ title }%", "%#{status}%")}
   scope :search_content_status, ->(content, status) {where("content LIKE ? AND status LIKE ?", "%#{ content }%", "%#{ status }%")}
   scope :search_title_content_status, ->(title, content, status) {where("title LIKE ? AND content LIKE ? AND status LIKE ?", "%#{ title }%", "%#{ content }%", "%#{ status }%")}
-
-  enum priority: { low: 0, middle: 1, high: 2 }
-
+  enum priority: {low: 0, middle: 1, high: 2}
 
 
   def self.index_order(params)

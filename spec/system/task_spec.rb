@@ -79,4 +79,41 @@ RSpec.describe 'Task', type: :system do
     end
   end
 
+  describe 'ラベル作成テスト' do
+    before do
+      Label.create(id: 1, label_name: "勉強")
+      Label.create(id: 2, label_name: "趣味")
+    end
+    it 'ラベルが正しく追加され、詳細ページに表示されること' do
+      visit new_task_path
+      fill_in 'タイトル', with: 'test1'
+      fill_in '内容', with: 'content'
+      check "task_label_ids_1"
+      click_on '登録する'
+      click_on '詳細'
+      expect(page).to have_content '勉強'
+    end
+
+    it 'ラベル検索ができること' do
+
+      visit new_task_path
+      fill_in 'タイトル', with: 'test1'
+      fill_in '内容', with: 'content'
+      check "task_label_ids_1"
+      click_on '登録する'
+
+      visit new_task_path
+      fill_in 'タイトル', with: 'test2'
+      fill_in '内容', with: 'content'
+      check "task_label_ids_2"
+      click_on '登録する'
+
+      root_path
+      select '勉強', from: 'task_task_label_ids'
+      click_on 'ラベル検索'
+      expect(page).to have_content 'test1'
+
+    end
+  end
+
 end
